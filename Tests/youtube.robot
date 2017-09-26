@@ -12,8 +12,11 @@ Suite Teardown  Close web page
 Find song on youtube
     [Tags]  Test 1
     youtubeApp.Find song
-    youtubeApp.Play Song
-    youtubeApp.Verify song is playng
+    sleep  3s
+
 
 Play song
     [Tags]  Test 2
+    youtubeApp.Find song
+    youtubeApp.Play Song
+    youtubeApp.Verify song is playng
